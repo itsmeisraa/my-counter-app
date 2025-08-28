@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* full height */
+    background: #f0f0f0;
+}
+
+/* Card container */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-top: 50px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Title */
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Counter value */
+.h4 {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #000;
+}
+
+/* Button container */
+.try {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+button:active {
+    transform: scale(0.9);
+}
+
+/* Specific button colors */
+.up {
+    background-color: #4ade80;  /* green */
+}
+
+.down {
+    background-color: #f87171; /* red */
+}
+
+.zero {
+    background-color: #facc15; /* yellow */
+}
+.zero:active {
+    transform: rotate(360deg);
+    transition: transform 0.6s ease;
+}
+
